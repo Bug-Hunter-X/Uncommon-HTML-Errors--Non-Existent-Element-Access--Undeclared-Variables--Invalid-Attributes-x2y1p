@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Accessing the element *after* it's defined in the HTML
+    const myDiv = document.getElementById("myDiv");
+    if (myDiv) { // Check if the element exists to prevent errors
+        myDiv.innerHTML = "Hello";
+    }
+
+    // Declare the variable before use
+    let declaredVariable = "This variable is declared";
+    console.log(declaredVariable);
+
+    //Correct the syntax error in this line of code
+    // <p invalidattribute="value">This is a paragraph</p>;
+  </script>
+</body>
+</html>
